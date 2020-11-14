@@ -24,6 +24,9 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.cyan[50],
         body: Column(
           children: [
+            SizedBox(
+              height: 10,
+            ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -71,6 +74,20 @@ class MyApp extends StatelessWidget {
                     onPressed: () {
                       print('Come, serve the Lord');
                     }),
+                FlatButton(
+                  child: Text(
+                    'Prayer Requests',
+                    style: TextStyle(
+                      fontFamily: 'Great Vibes',
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onPressed: () {
+                    print('submit your prayer requests here');
+                  },
+                  color: Colors.cyan,
+                ),
               ],
             ),
           ],
